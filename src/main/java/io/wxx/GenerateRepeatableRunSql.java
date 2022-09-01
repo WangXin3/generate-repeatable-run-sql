@@ -82,8 +82,8 @@ public class GenerateRepeatableRunSql {
         for (String s : list) {
             if (StrUtil.isNotBlank(s)) {
 
-                // 添加索引 ALTER TABLE `ecosaas_performance`.`tbl_performance_dimension` ADD INDEX `idx_di`(`dimension_id`) USING BTREE;
-                // 删除索引 ALTER TABLE `ecosaas_performance`.`tbl_choice_list` DROP INDEX `idx_di`;
+                // 添加索引 ALTER TABLE `xxx`.`xxx` ADD INDEX `xxx`(`xxx`) USING BTREE;
+                // 删除索引 ALTER TABLE `xxx`.`xxx` DROP INDEX `xxx`;
 
                 String[] split = s.split("`");
                 String schemaName = split[1];
@@ -139,8 +139,8 @@ public class GenerateRepeatableRunSql {
         for (String s : list) {
             if (StrUtil.isNotBlank(s)) {
 
-                // 添加列 ALTER TABLE `ecosaas_performance`.`tbl_performance_dimension` ADD COLUMN `indicator_name_enable` tinyint NULL DEFAULT NULL COMMENT '启用指标名称(1.是;0-否)' AFTER `score_id`;
-                // 删除列 ALTER TABLE `ecosaas_performance`.`tbl_upload_log` DROP COLUMN `upload_time`;
+                // 添加列 ALTER TABLE `xxx`.`xxx` ADD COLUMN `xxx` tinyint NULL DEFAULT NULL COMMENT 'xxx' AFTER `xxx`;
+                // 删除列 ALTER TABLE `xxx`.`xxx` DROP COLUMN `xxx`;
 
                 String[] split = s.split("`");
                 String schemaName = split[1];
